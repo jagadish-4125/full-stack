@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jagadish | ML Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00f2fe;
+      --accent: #4facfe;
+      --bg: #0f172a;
+      --card-bg: rgba(255,255,255,0.05);
+      --text: #f1f5f9;
+      --shadow: 0 4px 30px rgba(0,0,0,0.5);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: linear-gradient(135deg, var(--accent), var(--primary));
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1rem 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: .5rem;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: opacity 0.3s;
+    }
+    nav a:hover { opacity: 0.7; }
+    .container {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--primary);
+    }
+    /* About */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      background: var(--card-bg);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
+    }
+    .about img {
+      border-radius: 50%;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border: 3px solid var(--primary);
+    }
+    .about-text {
+      flex: 1;
+    }
+    /* Skills */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+    }
+    .skill {
+    background: var(--card-bg);
+    padding: 1rem 2rem; 
+    text-align: center;
+    font-weight: 600; 
+    border-radius: 12px; 
+    transition: transform 0.3s;
+    box-shadow: var(--shadow);
+    }
+    .skill:hover { transform: scale(1.05); background: var(--accent); }
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .project-card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+    .project-card:hover { transform: translateY(-5px); }
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .project-content {
+      padding: 1rem;
+      flex: 1;
+    }
+    .project-title {
+      font-size: 1.2rem;
+      margin: 0 0 .5rem;
+      color: var(--primary);
+    }
+    .project-desc { font-size: 0.95rem; }
+    .project-link {
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .project-link:hover { color: #fff; }
+    /* Contact */
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 6px;
+      outline: none;
+      background: #1e293b;
+      color: var(--text);
+    }
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 6px;
+      background: linear-gradient(135deg, var(--accent), var(--primary));
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+    button:hover { opacity: 0.8; }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      background: #1e293b;
+    }
+    @media(max-width:768px){
+      .about { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Jagadish</h1>
+  <p>Machine Learning Engineer | Data Scientist | AI Enthusiast</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <section id="about" class="about">
+    <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Jagadish">
+    <div class="about-text">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        Hi! I'm Jagadish, a passionate Machine Learning Engineer. I design and deploy intelligent systems using <b>Deep Learning, NLP, and Computer Vision</b>. My mission is to leverage data to solve real-world challenges in AI-powered applications. 🚀
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="skill">Python</div>
+      <div class="skill">TensorFlow / PyTorch</div>
+      <div class="skill">NLP</div>
+      <div class="skill">Computer Vision</div>
+      <div class="skill">Data Science</div>
+      <div class="skill">MongoDB</div>
+      <div class="skill">MERN Stack</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=800&q=80" alt="FEELORA">
+        <div class="project-content">
+          <div class="project-title">FEELORA</div>
+          <p class="project-desc">A personal growth and lifestyle management platform for tracking habits, affirmations, and long-term goals.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1581091012184-5c8d4f90b7a1?auto=format&fit=crop&w=800&q=80" alt="GestureX">
+        <div class="project-content">
+          <div class="project-title">GestureX</div>
+          <p class="project-desc">An AI-powered gesture recognition system enabling intuitive human-computer interaction.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1581093588401-7e7e7b6d91c1?auto=format&fit=crop&w=800&q=80" alt="VisionAI">
+        <div class="project-content">
+          <div class="project-title">VisionAI</div>
+          <p class="project-desc">Computer vision application to detect and analyze objects in real-time with AI accuracy.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</div>
+
+<footer>
+  © 2025 Jagadish | Machine Learning Engineer
+</footer>
+
+</body>
+</html>
